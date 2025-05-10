@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormulariosPreferencias</title>
+</head>
+<body style="background: rgb(8, 8, 57);">
+    <form>
+         <label for="name" style="display:inline-block; width: 128px; color: white" >Nombre Completo:</label>
+         <input type="text" placeholder="Escriba nombre completo" id="name" name="name" 
+         style="background:rgb(193, 188, 188);
+         width:300px; 
+         border:2px solid cornflowerblue;
+         border-radius:10px;"
+         padding:5px/>
+
+         <label for="email" style="color: white;">Correo:</label>
+         <input type="email" placeholder="Esciba el correo" id="email" name="email"/>
+         <label for="pais" style="color: white;">Pais: </label>
+         <select id="pais" name="pais">
+            <option>Seleccione el pais</option>
+            <option value="Colombia" >Colombia</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Bolivia">Bolivia</option>
+         </select>
+         <label for="genero" style="color: white;">Genero: </label>
+         <input type="radio" id="femenino" name="genero"> Femenino
+         <input type="radio" id="masculino" name="genero"> Masculino
+         <input type="radio" id="otro" name="genero"> Otro
+
+         <input type="checkbox" id="musica" value="musica" name="preferencias">
+         <label for="musica" style="color: white;">Musica</label>
+         <input type="checkbox" id="deporte" value="deporte" name="preferencias">
+         <label for="deporte" style="color: white;">Deporte</label>
+         <input type="checkbox" id="tecnologia" value="tecnologia" name="preferencias">
+         <label for="tecnologia" style="color: white;">Tecnologia</label>
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Limpiar">
+         <button type="submit">Ok</button>
+         <button type="reset">Clean</button>
+    </form>
+</body>
+</html>
